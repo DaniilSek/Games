@@ -1,4 +1,4 @@
-package org.example;
+package com.flappybird;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
