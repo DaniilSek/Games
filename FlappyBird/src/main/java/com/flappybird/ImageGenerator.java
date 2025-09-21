@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- Генерация изображений программно
+ * Генерация изображений программно
  */
 public class ImageGenerator {
     public static void generateBirdImage() {
@@ -37,7 +37,7 @@ public class ImageGenerator {
         g2d.dispose();
 
         try {
-            ImageIO.write(image, "PNG", new File("src/resources/images/bird.png"));
+            ImageIO.write(image, "PNG", new File("src/main/resources/images/bird.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -63,7 +63,7 @@ public class ImageGenerator {
         g2d.dispose();
 
         try {
-            ImageIO.write(image, "PNG", new File("src/resources/images/pipe.png"));
+            ImageIO.write(image, "PNG", new File("src/main/resources/images/pipe.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -91,7 +91,7 @@ public class ImageGenerator {
         g2d.dispose();
 
         try {
-            ImageIO.write(image, "PNG", new File("src/resources/images/background.png"));
+            ImageIO.write(image, "PNG", new File("src/main/resources/images/background.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -106,12 +106,12 @@ public class ImageGenerator {
 
     public static void main(String[] args) {
         // Создаем папку если не существует
-        new File("src/resources/images").mkdirs();
+        new File("src/main/resources/images").mkdirs();
 
         generateBirdImage();
         generatePipeImage();
         generateBackgroundImage();
 
-        System.out.println("Изображения сгенерированы в папке src/resources/images/");
+        System.out.println("Изображения сгенерированы в папке src/main/resources/images/");
     }
 }
