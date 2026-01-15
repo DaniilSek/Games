@@ -18,11 +18,11 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     private static final int WIDTH = 800;
     private static final int HEIGHT = 600;
     private static final int GROUND_HEIGHT = 100;
-    private static final int GRAVITY = 1;
-    private static final int JUMP_STRENGTH = -15;
-    private static final int PIPE_SPEED = 5;
+    //private static final int GRAVITY = 1;
+    //private static final int JUMP_STRENGTH = -15;
+    //private static final int PIPE_SPEED = 5;
     private static final int PIPE_SPACING = 200;
-    private static final int PIPE_GAP = 150;
+    //private static final int PIPE_GAP = 150;
 
     private Bird bird;
     private ArrayList<Pipe> pipes;
